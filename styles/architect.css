@@ -21,7 +21,7 @@
 
 /*Header Styles Here*/
 header{
-    background: #80ed99a2;
+    background: #80ed9959;
     padding: 50px 240px;
 }
 
@@ -70,6 +70,42 @@ nav li a{
     width: 100%;
     margin-top: 20px;
 }
+/* Main styles starts */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Feature section styles */
+.featureSection{
+    display: flex;
+    align-items: center;
+}
+
+.featureSection_child1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.featureSection_child2{
+    padding-left: 70px;
+    padding-right: 70px; 
+}
+.span1{
+    color: #727272;
+    font-weight: 500;
+}
+.span2{
+    font-weight: 700;
+}
+.span3{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
 
 /*Responsiveness Styles from here*/
 /*Mobile device*/
