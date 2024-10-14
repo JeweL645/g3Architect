@@ -18,6 +18,9 @@
     cursor: pointer;
     border: 0;
 }
+.text-light-gray{
+    color: #727272;
+}
 
 /*Header Styles Here*/
 header{
@@ -63,9 +66,7 @@ nav li a{
     font-weight: 700;
     color: #131313 ;
 }
-.banner-description{
-    color: #727272;
-}
+
 .banner img{
     width: 100%;
     margin-top: 20px;
@@ -73,7 +74,7 @@ nav li a{
 /* Main styles starts */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 
@@ -92,8 +93,8 @@ main{
     padding-left: 70px;
     padding-right: 70px; 
 }
-.span1{
-    color: #727272;
+.span1 .text-light-gray{
+    
     font-weight: 500;
 }
 .span2{
@@ -107,19 +108,33 @@ main{
 
 
 
+
+
+
+
+
 /*Responsiveness Styles from here*/
 /*Mobile device*/
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+    .featureSection
+    {
         flex-direction: column;
+    }
+    .featureSection_child1{
+        grid-template-columns: 1fr;
+    }
+    .featureSection_child2{
+        padding-left: 15px;
+        padding-right: 15px; 
     }
 }
 /*Tablet/Medium device*/
 @media screen and (min-width: 576px) and  (max-width: 960px) {
-    nav{
+    nav, .featureSection{
         flex-direction: column;
     }
     header{
